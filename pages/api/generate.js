@@ -1,7 +1,7 @@
 const generateAction = async (req, res) => {
   console.log("Received request");
 
-  const input = JSON.parse(req.body).input;
+  const input = JSON.parse(req.body).finalInput;
 
   const response = await fetch(
     `https://api-inference.huggingface.co/models/maxmyn/maxmynter`,
