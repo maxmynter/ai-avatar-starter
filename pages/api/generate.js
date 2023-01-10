@@ -16,6 +16,7 @@ const generateAction = async (req, res) => {
       }),
     }
   );
+  console.log("Huggingface Request Response: ", response);
 
   if (response.ok) {
     const buffer = await response.arrayBuffer();
